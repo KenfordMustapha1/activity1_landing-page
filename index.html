@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+        
+        .header {
+            background-color: #000000;
+            color: #5271ff;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 1400px;
+            box-sizing: border-box;
+            margin-left: 55px;
+            border-radius: 15px;
+            height: 50px;
+        }
+        
+        .logo {
+            font-size: 30px;
+            font-weight: 900;
+            position: absolute;
+            left: 700px;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .nav {
+            display: flex;
+            gap: 230px;
+            background-color: transparent;
+            position: absolute;
+            right: 600px;
+            
+        }
+        
+        .nav a {
+            color: #5271ff;
+            font-size: 18px;
+            text-decoration: none;
+        }
+        
+        .nav a:hover {
+            text-decoration: underline;
+        }
+        
+        .image-container {
+            position: relative; 
+            width: 100%;
+        }
+        
+        img {
+            width: 100%;
+            height: auto; 
+            border-radius: 50px 50px 0px 0px;
+        }
+        
+        .hero-text {
+            color: rgb(0, 0, 0);
+            font-size: 60px;
+            font-weight: bold;
+            text-align: center;
+            margin: 0;
+            padding-top: 200px;
+            padding-bottom: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .highlight {
+            color: #5271ff;
+        }
+        
+        .hero-subtext {
+            color: black;
+            font-size: 16px;
+            text-align: center;
+            margin: 0;
+            font-weight: lighter;
+            padding-bottom: 40px;
+        }
+        
+        .body1 {
+            width: 100%;
+            height: 900px;
+            background-color: rgb(0, 0, 0);
+            border-radius: 50px 50px 0px 0px;
+            
+        }
+        
+        .body11 {
+            width: 1440px;
+            height: 900px;
+            background-color: #ffffff;
+            margin-top: 15px;
+        }
+
+        button {
+            border: #0470c7;
+            border-radius: 2px;
+            margin-left: 47%;
+            font-size: 15px;
+            width: 120px;
+            height: 40px;
+        }
+        
+        .rectangle {
+            width: 600px;
+            height: 450px;
+            background-color: white;
+            position: absolute;
+            top: 493px;
+            left: 500px;
+        }
+        
+        .rectangle1, .rectangle2, .rectangle3, .rectangle4, .rectangle5, .rectangle6 {
+            width: 350px;
+            height: 250px;
+            background-color: rgba(12, 12, 12, 0.5);        
+            position: absolute;
+            border-radius: 7px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .rectangle1 {
+            top: 1200px;
+            left: 17%;
+        }
+        .rectangle2 {
+            top: 1200px;
+            left: 41%;
+        }
+        .rectangle3 {
+            top: 1200px;
+            left: 65%;
+        }
+        .rectangle4 {
+            top: 1466px;
+            left: 17%;
+        }
+        .rectangle5 {
+            top: 1466px;
+            left: 41%;
+        }
+        .rectangle6 {
+            top: 1466px;
+            left: 65%;
+        }
+
+        .rectangle1:hover, .rectangle2:hover, .rectangle3:hover, .rectangle4:hover, .rectangle5:hover, .rectangle6:hover {
+            background-color: rgba(18, 18, 18, 0.7); 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        
+        .circle {   
+            width: 350px;
+            height: 350px;
+            border-radius: 100%;
+            background-color: #0043fb;
+            position: absolute;
+            left: 50px;
+            top: 610px;
+            animation: moveCircle 10s infinite linear;
+        }
+        
+        .circle1 {
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+            background-color: rgb(0, 152, 253);
+            position: absolute;
+            left: 50px;
+            top: 397px;
+            animation: moveCircle1 8s infinite linear;
+        }
+        
+        .circle2 {
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+            background-color: #006afe;
+            position: absolute;
+            left: 1250px;
+            top: 800px;
+            animation: moveCircle2 12s infinite linear;
+        }
+        .circle3 {
+            width: 350px;
+            height: 350px;
+            border-radius: 100%;
+            background-color: hwb(222 19% 0%);
+            position: absolute;
+            left: 1150px;
+            top: 370px;
+            
+        }
+        @keyframes moveCircle {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-100px); }
+            100% { transform: translateY(0); }
+        }
+
+        @keyframes moveCircle1 {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(100px); }
+            100% { transform: translateX(0); }
+        }
+
+        @keyframes moveCircle2 {
+            0% { transform: translateX(0) translateY(0); }
+            50% { transform: translateX(-100px) translateY(-100px); }
+            100% { transform: translateX(0) translateY(0); }
+        }
+
+        
+        
+        .footer {
+            background-color: #111010;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            width: 100%;
+            box-sizing: border-box;
+            font-size: 14px;
+            bottom: 0;
+        }
+        .h {
+            font-size: 24px;
+            text-align: center;
+            font-weight: bold;
+            color: #002fff;
+        }
+        .p {
+            font-size: 14px;
+            position: absolute;
+            left: 35px;
+            top: 60px;
+            font-weight: lighter;
+            color: #cfd8ff;
+        }
+    </style>
+</head>
+
+<body>  
+    <div class="header">
+        <div class="logo">KENXX</div>
+            <div class="nav">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+            </div>
+    </div>
+    
+    <div id="home" class="body11">
+        <div> 
+            <p class="hero-text">The Importance of <span class="highlight">Web Development</span></p>
+            <p class="hero-subtext">Discover How Web Development Can Drive Growth, Enhance User Experience, and Set You Apart in the Digital World.</p>
+            <button> Learn More..</button>
+            <div>
+                <div class="circle1"></div>
+                <div class="circle"></div>
+                <div class="circle2"></div>
+                <div class="circle3"></div>
+                <div class="rectangle">  
+                    <img src="tkh2.jpg" alt="tlj">
+                </div>
+            </div>
+        </div>   
+    </div>
+
+    <div id="about" class="body1">
+        <img src="about.jpg" alt="about">
+        <div class="rectangle1">
+            <h1 class="h">Online Presence</h1>
+            <p class="p">Web development enables businesses and individuals to establish a professional online presence, which is crucial in today’s digital <br>world. A well-designed website helps to <br>showcase products, services, or personal portfolios to a global audience, making it <br>easier to connect with potential customers <br>or clients.</p>
+        </div>
+        <div class="rectangle2">
+            <h1 class="h">Accessibility</h1>
+            <p class="p">Websites provide 24/7 access to information <br> and services. This means users can access <br>your content at any time, from anywhere in <br>the world, without being restricted by physical location or business hours. This constant availability can significantly expand your <br>reach and influence.</p>
+
+        </div>
+        <div class="rectangle3">
+            <h1 class="h">Branding</h1>
+            <p class="p">A professionally developed website helps <br>strengthen your brand’s identity. It reflects <br>your brand’s values, style, and message, <br>creating a consistent and memorable <br>experience for visitors. This can build trust <br>brand enhance your reputation in the market.</p>
+        </div>
+        <div class="rectangle4">
+            <h1 class="h">Marketing</h1>
+            <p class="p">Websites are central to digital marketing strategies. They enable businesses to <br>implement various online marketing <br>techniques such as search engine <br>optimization (SEO), content marketing, <br>and pay-per-click advertising. <br>A well-optimized site can attract more <br> visitors and generate leads.</p>
+        </div>
+        <div class="rectangle5">
+            <h1 class="h">Customer Engagement</h1>
+            <p class="p">Effective web development allows for interactive elements like contact forms, live chat, and feedback systems. These features help engage visitors directly, addressing their questions or concerns in real time, and fostering a better relationship with your audience.</p>
+        </div>
+        <div class="rectangle6">
+            <h1 class="h">Sales and Revenue</h1>
+            <p class="p">For e-commerce sites, web development is <br>key to creating a seamless shopping <br>experience. A well-designed online store <br>can facilitate transactions, showcase <br>products effectively, and integrate payment systems, helping to boost sales and <br>increase revenue opportunities.</p>
+        </div>
+       
+    </div>
+    
+    <footer class="footer">
+        <p>&copy; 2024 Ken Ford M. Mustapha. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
